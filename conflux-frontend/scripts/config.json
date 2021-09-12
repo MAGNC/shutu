@@ -1,0 +1,9 @@
+{
+  "private_key": " ",
+  "network": "homestead",
+  "ERC20": "0x0DEd9F7D82a24099F09AF7831CaB61B31Df10487",
+  "name": "Kanchan Coin",
+  "symbol": "SNK",
+  "total_supply": "1000000000000000000000000",
+  "decimals": 18
+}

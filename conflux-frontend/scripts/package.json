@@ -1,0 +1,17 @@
+{
+  "name": "contract-project",
+  "version": "1.0.0",
+  "description": "smart Contract",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yumingyuan",
+  "license": "ISC",
+  "dependencies": {
+    "ethers": "^5.0.3",
+    "fs-extra": "^9.0.1",
+    "js-conflux-sdk": "^0.10.3",
+    "solc": "^0.5.11"
+  }
+}

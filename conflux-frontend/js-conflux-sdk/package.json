@@ -1,0 +1,116 @@
+{
+  "_from": "js-conflux-sdk",
+  "_id": "js-conflux-sdk@1.7.0",
+  "_inBundle": false,
+  "_integrity": "sha512-XqfZQz3ozB9g9+RaL7aI1mHrzUVJSgF72bYutkaTDeQPnOVKcOUwKs7mSdYIp51Ers/jJgm+vqhCgzecRD9lwQ==",
+  "_location": "/js-conflux-sdk",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "js-conflux-sdk",
+    "name": "js-conflux-sdk",
+    "escapedName": "js-conflux-sdk",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/js-conflux-sdk/-/js-conflux-sdk-1.7.0.tgz",
+  "_shasum": "7b57a076a5f15281cac408433999115f251c3ce1",
+  "_spec": "js-conflux-sdk",
+  "_where": "C:\\Users\\zc",
+  "author": {
+    "name": "Haizhou@conflux-chain.org"
+  },
+  "bin": {
+    "cfxjs": "bin/cfxjs.js"
+  },
+  "browser": "dist/js-conflux-sdk.umd.min.js",
+  "browserify-browser": {
+    "secp256k1": "secp256k1/elliptic",
+    "./src/util/jsbi": "jsbi"
+  },
+  "browserslit": "cover 99.5%",
+  "bugs": {
+    "url": "https://github.com/Conflux-Chain/js-conflux-sdk/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@conflux-dev/conflux-address-js": "^1.1.7",
+    "big.js": "^5.2.2",
+    "commander": "^8.0.0",
+    "keccak": "^2.0.0",
+    "lodash": "^4.17.19",
+    "scrypt-js": "^3.0.1",
+    "secp256k1": "^3.7.1",
+    "superagent": "^6.1.0",
+    "websocket": "^1.0.31"
+  },
+  "deprecated": false,
+  "description": "JavaScript Conflux Software Development Kit",
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-transform-runtime": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/runtime": "^7.8.4",
+    "@geekberry/jsdoc-to-md": "0.0.8",
+    "@types/node": "^14.0.23",
+    "babel-plugin-lodash": "^3.3.4",
+    "babelify": "^10.0.0",
+    "browserify": "^16.5.1",
+    "concurrently": "^5.1.0",
+    "eslint": "^7.12.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "exorcist": "^1.0.1",
+    "fs-extra": "^8.1.0",
+    "jest": "26.6.0",
+    "jsbi": "^3.1.4",
+    "minify-stream": "^2.0.1",
+    "mold-source-map": "^0.4.0",
+    "solc": "^0.6.10"
+  },
+  "files": [
+    "dist",
+    "mock",
+    "src",
+    "types"
+  ],
+  "homepage": "https://github.com/Conflux-Chain/js-conflux-sdk#readme",
+  "keywords": [
+    "conflux",
+    "sdk"
+  ],
+  "license": "LGPL-3.0",
+  "main": "src/index.js",
+  "name": "js-conflux-sdk",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Conflux-Chain/js-conflux-sdk.git"
+  },
+  "resolutions": {
+    "tinyify/acorn-node/acorn": "7.1.1",
+    "eslint/espree/acorn": "7.1.1",
+    "tinyify/unassertify/unassert/acorn": "7.1.1",
+    "**/minimist": "^1.2.3",
+    "**/kind-of": "^6.0.3",
+    "**/elliptic": "^6.5.3",
+    "**/lodash": "^4.17.20",
+    "**/babel-jest": "^26.6.0",
+    "jest/jest-cli/jest-config/jest-environment-jsdom/jsdom/acorn-globals/acorn": "6.4.1"
+  },
+  "scripts": {
+    "build": "node scripts/build-frontend.js",
+    "document": "node scripts/document.js",
+    "eslint": "eslint ./src ./test ./mock",
+    "prepublishOnly": "npm run build",
+    "react": "npm run build & cd react & yarn build & yarn start",
+    "test": "jest --coverage"
+  },
+  "types": "./types/index.d.ts",
+  "version": "1.7.0"
+}
